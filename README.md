@@ -22,5 +22,5 @@ conda activate FasterWhisper
 
 pip install -r requirements.txt
 
-## 查看cuda版本
+## 查看cuda版本和占用情况
 nvidia-smi
