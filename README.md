@@ -21,3 +21,6 @@ conda create -n FasterWhisper python=3.10
 conda activate FasterWhisper
 
 pip install -r requirements.txt
+
+## 查看cuda版本
+nvidia-smi
