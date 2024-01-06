@@ -16,7 +16,7 @@ model = WhisperModel(model_size_or_path=path, device="cuda", compute_type="int8_
 # or run on CPU with INT8
 # model = WhisperModel(model_size_or_path=path, device="cpu", compute_type="int8", local_files_only=True)
 
-segments, info = model.transcribe(audio=files2, language='zh', vad_filter=True,
+segments, info = model.transcribe(audio=files1, language='zh', vad_filter=True,
                                   vad_parameters=dict(min_silence_duration_ms=1000), beam_size=5)
 
 print("Detected language '%s' with probability %f" % (info.language, info.language_probability))

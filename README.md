@@ -1,4 +1,4 @@
-### my_big_models_log
+### my_whisper_log
 
 the log of doing faster-whisper model
 
@@ -21,7 +21,7 @@ conda create -n FasterWhisper python=3.10
 
 conda activate FasterWhisper
 
-pip install -r requirements.txt
+pip install -r requirements.txt --proxy=127.0.0.1:10809
 
 ## 查看cuda版本和占用情况
 nvidia-smi
