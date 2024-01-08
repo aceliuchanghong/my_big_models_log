@@ -2,11 +2,13 @@
 from faster_whisper import WhisperModel
 import pysubs2
 
-files1 = "../testfile/2.wav"
-files2 = "../testfile/WeChat_20231007161725.mp3"
-srt_file_name = '../testfile/out/test'
+from config import config
+
+files1 = config.test_files1
+files2 = config.test_files2
+srt_file_name = config.srt_file_name
 # model_size = "large-v3"
-path = r'C:\Users\lawrence\Documents\large_v3'
+path = config.model_path
 # Run on GPU with FP16
 # model = WhisperModel(model_size_or_path=path, device="cuda", compute_type="float16", local_files_only=True)
 
